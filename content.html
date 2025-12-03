@@ -1,1 +1,35 @@
+<p>In a Github repository defining a Atomic Learning content page, one of the required files is named <code>metadata.json</code>. This file contains the information describing how the page fits into the larger platform and details of how the content should be presented.</p>
 
+<p>The file follows a particular format and will initially be populated with the structure of the <a href="https://github.com/Atomic-Learning/content-template/blob/main/metadata.json"> metadata file</a> in the <a href="https://github.com/Atomic-Learning/content-template/tree/main">content template repository</a>. The file contains a json object whose key-value pairs provides the required metadata for the content page. All key-value pairs in the template must be present in the final metadata file. These required keys are outlined below.</p>
+
+<h2>Title</h2>
+
+<p>The <code>title</code> key contains a string value that defines the title of the content page. This title will be displayed prominently on the page and used in navigation menus.</p>
+
+<h2>Slug</h2>
+
+<p>The <code>slug</code> key contains a string value that defines the URL-friendly identifier for the content page. This slug is used in the web address to access the page. It will typically be the same as the name of the GitHub repository and will be related to the title of the content page. As it needs to be URL-friendly, it should not contain spaces or special characters. If the slug represents different words, these words should be separated by hyphens (<code>-</code>).</p>
+
+<h2>Authors</h2>
+
+<p>The <code>authors</code> key contains an array of strings, with each string representing the name of an author who contributed to the content page. For each author, the value will need to registered on the Atomic Learning platform to make sure it links correctly to the author's profile and contributions. Several authors can be listed if applicable, and should be ordered roughly in order of the amount contributed to the page.</p>
+
+<h2>Tags</h2>
+
+<p>The <code>tags</code> key contains an array of strings, with each string representing a tag that categorizes the content page. These tags help in organizing and searching for content within the platform. Multiple tags can be included to cover different relevant topics or themes associated with the content. Each tag will need to be registered on the Atomic Learning platform to ensure it links correctly to the tag's page and related content.</p>
+
+<h2>Duration</h2>
+
+<p>The <code>duration</code> key contains an integer value that represents the estimated time, in minutes, required to complete or engage with the content on the page. This value must an integer greater than zero. </p>
+
+<h2>Prerequisites</h2>
+
+<p>The <code>prerequisites</code> key contains an array of strings, with each string contains a slug of a content page that should be completed or understood before engaging with the current content page. The order in which prerequisites are listed signifies the order in which prerequisites will be presented to the learner. As a result, the last slug in the list will be the piece of content the learner sees immediately before this page. If there are no prerequisites for the content page, this array should be left empty.</p>
+
+<h2>Related Content</h2>
+
+<p>The <code>related_content</code> key contains an array of strings, with each string containing a slug of a content page that is related to the current content page. These related content pages can provide additional context, suggestions of what to study next, or complementary information to enhance the learner's understanding. Related content should not overlap with prerequisites. If there are no related content pages, this array should be left empty.</p>
+
+<h2>Additional Key-Value Pairs</h2>
+
+<p>While the above key-value pairs are required, there are some features of the Atomic Learning platform that may require additional metadata to be included in the <code>metadata.json</code> file. If any additional key-value pairs are needed, these will be specified in the relevant feature documentation.</p>

@@ -1,21 +1,17 @@
 {
-    "title": "",
-    "slug": "",
+    "title": "Atomic Learning: The Metadata File",
+    "slug": "atomic-learning-metadata-file",
     "authors": [
-        "",
-        ""
+        "chris-cooling"
     ],
     "tags": [
-        "",
-        ""
+        "atomic-learning"
     ],
-    "duration": 0,
+    "duration": 4,
     "prerequisites": [
-        "",
-        ""
+        "json-nested-arrays-and-objects"
     ],
     "related": [
-        "",
-        ""
+        "atomic-learning-python-cells-importing-packages"
     ]
 }
