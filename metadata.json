@@ -9,7 +9,8 @@
     ],
     "duration": 4,
     "prerequisites": [
-        "json-nested-arrays-and-objects"
+        "json-nested-arrays-and-objects",
+        "atomic-learning-content-repositories"
     ],
     "related": [
         "atomic-learning-python-cells-importing-packages"
