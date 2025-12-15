@@ -1,6 +1,7 @@
 {
     "title": "Atomic Learning: The Metadata File",
     "slug": "atomic-learning-metadata-file",
+    "description": "A description of the metadata.json file in a content repository in the Atomic Learning platform.",
     "authors": [
         "chris-cooling"
     ],
